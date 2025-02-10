@@ -90,12 +90,12 @@ public class CarritoSteps {
     }
     /*Recuperar unidad x precio unitario en la pagina del carrito de compras*/
     public int unidadXPU(){
-        int unitprice = Integer.parseInt(driver.findElement(PopupPage.UnitPrice).getText());
-        int units = Integer.parseInt(driver.findElement(PopupPage.Units).getText());
+        int unitprice = Integer.parseInt(driver.findElement(CarritoPage.UnitPrice).getText());
+        int units = Integer.parseInt(driver.findElement(CarritoPage.Units).getText());
         return unitprice * units;
     }
     /*Recuperar precio total en la pagina del cvarrito de compras*/
     public int TotalPrice(){
-        return Integer.parseInt(driver.findElement(PopupPage.TotalPrice).getText());
+        return Integer.parseInt(driver.findElement(CarritoPage.TotalPrice).getText());
     }
 }
